@@ -1,0 +1,83 @@
+create table Despesa (
+idDespesa int auto_increment primary key,
+notaFiscal varchar (50) null,
+fornecedor varchar (50) null,
+descricao varchar (50) null,
+statusCaixa varchar (50) null,
+ tipoLancamento varchar (50) null,
+ dataPagamento varchar (50) null,
+  dataVencimento varchar (50) null,
+dataCadastro varchar (50) null,
+ centroCusto varchar (50) null,
+ tipoDespesa varchar (50) null,
+ planoConta varchar (50) null,
+tipoSaida varchar (50) null,
+valor varchar (50) null,
+desconto varchar (50) null,
+juros varchar (50) null,
+valorTotal varchar (50) null,
+formaPagamento varchar (50) null,
+uploadComprovante varchar (50) null,
+statusPagamento varchar (50) null,
+foiParcelado varchar (50) null);
+
+
+create table Entrada (
+idEntrada int auto_increment primary key,
+notaFiscal  varchar (50) null, 
+membro  varchar (50) null, 
+descricao  varchar (50) null, 
+centroCusto  varchar (50) null,
+dataPagamento  varchar (50) null, 
+dataVencimento  varchar (50) null,  
+dataCadastro  varchar (50) null,
+statusCaixa  varchar (50) null,
+tipoLancamento  varchar (50) null, 
+planoConta  varchar (50) null, 
+tipoReceita  varchar (50) null,
+valor  varchar (50) null, 
+statusPagamento  varchar (50) null, 
+formaPag  varchar (50) null, 
+foiParcelado  varchar (50) null
+);
+
+create table oferta (
+idOferta int auto_increment primary key,
+valorDia  varchar (50) null, 
+tipoOferta  varchar (50) null,
+dataPagamento  varchar (50) null,
+dataCadastro  varchar (50) null,
+statusCaixa  varchar (50) null, 
+tipoLancamento  varchar (50) null,
+obs  varchar (50) null, 
+valor  varchar (50) null, 
+forma  varchar (50) null,
+conferente1  varchar (50) null, 
+conferente2  varchar (50) null);
+
+create table dizimo (
+idDizimo int auto_increment primary key, 
+membro varchar (50) null, 
+planoConta varchar (50) null, 
+dataPagamento varchar (50) null, 
+dataCadastro varchar (50) null,
+statusCaixa varchar (50) null, 
+obs varchar (50) null, 
+valor varchar (50) null, 
+formaPag varchar (50) null
+);
+
+create table caixa (
+idCaixa int auto_increment primary key, 
+totalDespesa varchar (50) null, 
+totalEntrada varchar (50) null, 
+totalOferta varchar (50) null, 
+totalDizimo varchar (50) null, 
+receita varchar (50) null, 
+de varchar (50) null, 
+ate varchar (50) null, 
+dataFechamento varchar (50) null, 
+statusCaixa  varchar (50) null, 
+ 
+
+);
